@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+		<link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+		<script src="js/jquery-1.11.0.js"></script>
+		<script src="js/scripts.js"></script>
+		<title>Cheat Sheet</title>
+	</head>
+<body>
+	<div class="container">
+		<h1>HTML</h1>
+				<p class="information"> <a href="http://www.w3schools.com/tags/default.asp?utm_source=twitterfeed&utm_medium=twitter">Here</a> is a list of HTML tage from w3 schools.</p>
+
+				<p class ="information">To enter a space use the NBSP tag.  To enter a new line, use the BR tag.</br>
+					Remember that when you want to use an image, use the following code:</p>
+
+				<pre>img src="img/file.jpg" alt="Description of photo." </pre>
+
+				<p class="information">Here is a small list of tags I've used so far:</p>
+				<ol>
+					<li>span - used to identify in line elements that can be stylized in CSS.</li>
+					<li>ol, ul to create lists.  li creates list items inside the lists.</li>
+					<li>a href - "anchor hyperlink reference" - used for links. Can be used as "a href="mailto:addy class=x"</li>
+					<li>strong - defines <strong>important</strong> text.  Different than bold.</li>
+					<li>em - <em>emphasis</em></li>
+					<li>div and span are used to classify blocks of code as belonging to a specific class.</li>
+					<li>pre - used to show preformatted text.</li>
+				</ol>
+
+
+			<h1>CSS</h1>
+				<p class="information">Here is the code to add css to your html. Add this under your head.</p>
+				<pre>link href="css/styles.css" rel="stylesheet" type="text/css" media="all"</pre>
+
+				<p class="information">Here is an example of h1 being modified in the css.</p>
+				<pre>h1 {</br>  color: blue;</br>  text-align:center;</br>}</pre>
+				<p class="information">The "h1" is called a selector.  "Color" and "text-align" are called properties.  "Blue" and "center" are called properties.</br>You can select individual selectors inside a class using other tags like in the following snipit.  The rule is that the most specific selector will always be used.  If two rules have the same specificity, the last one wins.  Avoid this scenario.</p>
+				<pre>.digital p a {</br>  background-color: yellow</br>}</pre>
+				<a href="http://www.w3schools.com/cssref/default.asp?utm_source=twitterfeed&utm_medium=twitter">Here</a> is a long list of CSS properties from w3 schools.</p>
+
+				<p class="information">Use classes in css to apply styles to sepecific classes.  To address a class, first type the selector then "." then the class name."  One class can apply to multiple selectors.  Use just ."classname" to make changes to all selectors that have the same classname.  Use this method to assign a block of text to be grouped together such as the sidebar or footer. ex: div a block to sidebar and use CSS to float the class to the right with a background color of yellow.</p>
+
+				<p class="information">"#" is an ID selector which is used to target a single specific element with a unique id.  "." is a class selector used to target multiple elements with a particular class.  The "#" is used when the style is something you know is only going to appear once, for example things like high level layout divs such as sidebars, banner areas etc.</p>
+
+				<p class="information">Use flats to move blocks of code or graphics around the page.  Float is a common property. </br>
+					To make a column, div three sections of code in a "column" class.  Use CSS to apply a width and float the class.</p>
+				<div class="column_example"><h3>Column One</h3></div>
+				<div class="column_example"><h3>Column Two</h3></div>
+				<div class="column_example"><h3>Column Three</h3></div>
+
+				<p class="information">Here is a picture that shows the different kinds of properties used to create nice looking webpages:</p>
+				<img class="padded" src="img/box-model.jpg" alt="The Box Model">
+
+
+				<h4>Dynamic CSS</h4>
+				<p class="information">Here is code on how to make your website dynamic:</p>
+				<pre>Responsive CSS: "@media(min-width:768px) and (max-width" 991px) {</br>  .myclass {</br>    display: inline;</br>  }</br>}</pre>
+
+
+			
+
+			<h1>Java Script / JQuery</h1>
+				<h4>How to link in the script:</h4>
+						<pre>&lt;script src=&quot;js/jquery-1.11.0.js&quot;&gt;&lt;/script&gt;</br>&lt;script src=&quot;js/scripts.js&quot;&gt;&lt;/script&gt;</pre>
+
+				<h4>How to make an image show when a paragraph is clicked:</h4>
+					<pre>$("p").click(function() {</br>	$("img").show();</br>});</pre>
+
+				<h4> Common Operators and syntax:</h4>
+					<ul>
+						<li>"+","-","*","/" and % which returns the remaider after division.</li>
+						<li>"Comparators": ">", "<", "==" to return boolean value, "!=" NOT equal, ">=", "=<".</li>
+						<li> Use "+" to concatenate strings.</li>
+						<li>Make strings out of expressions to concatenate them.</li>
+						<li>Use "\t" to advance to the next "tab stop".</li>
+						<li>Use a "\"" to show a quitation mark without ending the string too early.</li>
+						<li>Use a double back slash to show a back slash.</li>
+						<li>Use "\n" to shift the printout to a new line.</li>
+						<li>Use ".length" property to return the length of the string.</li>
+						<li>Use "var" to declare a variable.  The syntax is "var variable = ##</li>
+						<ul>
+							<li>No digits in variable names.</li>
+							<li>Underscores are okay but irritating.</li>
+							<li>CamelCase is the standard</li>
+							<li>Can have numbers</li>
+						</ul>
+						<li>To change a variable's value, do not need to re-var.</li>
+						<li>Use "variable += ##" to add to the existing variable.  Also works with "*=" and others.</li>
+						<li>To increase the value by one, use VARIABLE++ or VARIABLE-- or "+=###" to subtract.</li>
+						<li>The index of a string will always be one more than the last index. (Because the index starts at zero.)</li>
+						<li>Use "VARIABLE.charAt(##)" to find the character at a specific index.</li>
+						<li>
+					</ul>
+
+
+				<h4>Alert:</h4>
+				<pre>jQuery("h1").click(function() {</br>	alert("Correct.");</br>});</pre>
+				
+
+
+				<h4>JS function from the library:  "$(document).ready(function);" </h4>
+
+
+				<h1>Sublime Text 2</h1>
+					<ul>Shortcuts</ul>
+						<li>Command + D = grabs next word.</li>
+						<li>Command + shift + D = duplicates line.</li>
+						<li>Command + L = Select line</li>
+						<li>Command + ] = Tab line</li>
+						<li>Command = [ = Back-tab line</li>
+						<li>Command + shift + K = Delete line</li>
+						<li>Command + click = multiple cursors</li>
+						<li>Command + J = join lines</li>
+						<li>Command + Alt + drag mouse down = multiple cursors straight down</li>
+						<li>Command + shift + v = paste with indentation and syntax.</li>
+						<li>Command + shift + m = highlight everything in brackets.
+						<li>Command + shift + j = hightlight everything inside the cursor's current indent.</li>
+						<li>Command + / = comment</li>
+						<li><a href="https://gist.github.com/lucasfais/1207002">See more here</a></li>
+					</ul>
+
+				<h1>Mac</h1>
+					<ul>
+						<li>Command + Shift + N = New Folder</li>
+						<li>Command + Up = go up one level in finder</li>	
+					</ul>
+	</div>
+</body>
+</html>
+

@@ -1,0 +1,13 @@
+h1 {
+	color: blue;
+}
+
+.column_example {
+	width: 32%;
+	float: left;
+	background-color: green;
+	margin: 2px;
+	text-align: center;
+	color: white;
+	margin-bottom: 15px;
+}

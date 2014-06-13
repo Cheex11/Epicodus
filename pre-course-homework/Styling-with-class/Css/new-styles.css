@@ -1,0 +1,43 @@
+p.intro {
+	width: 50%;
+	font-style: italic;
+}
+
+p.author {
+	width: 50%;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.important {
+	color:red;
+}
+
+.style77 {
+	color: green;
+	font-weight: bold;
+}
+
+.sidebar {
+	width: 30%;
+	float: right;
+	background-color: yellow;
+}
+
+.column {
+	width: 300px;
+	float: left;
+}
+
+.image {
+	float: right;
+	height: 100px;
+	vertical-align: bottom;
+}
+
+.boxmodel {
+	border: 2px solid green;
+	padding: 4px;
+	margin: 12px;
+	background-color: orange;
+}

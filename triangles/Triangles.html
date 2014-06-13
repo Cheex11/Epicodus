@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Anagram Tester</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1>Anagram Tester</h1>
+        <form id="anagramWords">
+          
+          <div class="form-group">
+            <label for="wordOne">Enter the first word:</label>
+            <input id="wordOne" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="wordList">Enter a list of words separated by spaces:</label>
+            <input id="wordList" type="text">
+          </div>
+          
+          <button type="submit" class="btn">Check!</button>
+        </form>
+
+        <div id="result">
+          <p>For the word <strong> <span class="wordOne"></span> </strong></br>
+            Anagrams: <span class="anagramResults"></span></br>
+            Not Anagrams: <span class="notAnagramResults"></span></p>
+        </div> 
+      </div>
+    </div>
+  </body>
+</html>

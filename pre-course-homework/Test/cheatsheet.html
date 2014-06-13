@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+		<link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+		<script src="js/jquery-1.11.0.js"></script>
+		<script src="js/scripts.js"></script>
+		<title>Cheat Sheet</title>
+		<title>Test things here</title>
+	</head>
+<body>
+	<div class="container">
+		<h1>HTML</h1>
+				<p class="information"> <a href="http://www.w3schools.com/tags/default.asp?utm_source=twitterfeed&utm_medium=twitter">Here</a> is a list of HTML tage from w3 schools.</p>
+
+				<p class ="information">To enter a space use the NBSP tag.  To enter a new line, use the BR tag.</br>
+					Remember that when you want to use an image, use the following code:</p>
+
+				<pre>img src="img/file.jpg" alt="Description of photo." </pre>
+
+				<p class="information">Here is a small list of tags I've used so far:</p>
+				<ol>
+					<li>span - used to identify in line elements that can be stylized in CSS.</li>
+					<li>ol, ul to create lists.  li creates list items inside the lists.</li>
+					<li>a href - "anchor hyperlink reference" - used for links. Can be used as "a href="mailto:addy class=x"</li>
+					<li>strong - defines <strong>important</strong> text.  Different than bold.</li>
+					<li>em - <em>emphasis</em></li>
+					<li>div and span are used to classify blocks of code as belonging to a specific class.</li>
+					<li>pre - used to show preformatted text.</li>
+				</ol>
+
+
+			<h1>CSS</h1>
+				<p class="information">Here is the code to add css to your html. Add this under your head.</p>
+				<pre>link href="css/styles.css" rel="stylesheet" type="text/css" media="all"</pre>
+
+				<p class="information">Here is an example of h1 being modified in the css.</p>
+				<pre>h1 {</br>  color: blue;</br>  text-align:center;</br>}</pre>
+				<p class="information">The "h1" is called a selector.  "Color" and "text-align" are called properties.  "Blue" and "center" are called properties.</br>You can select individual selectors inside a class using other tags like in the following snipit.  The rule is that the most specific selector will always be used.  If two rules have the same specificity, the last one wins.  Avoid this scenario.</p>
+				<pre>.digital p a {</br>  background-color: yellow</br>}</pre>
+				<a href="http://www.w3schools.com/cssref/default.asp?utm_source=twitterfeed&utm_medium=twitter">Here</a> is a long list of CSS properties from w3 schools.</p>
+
+				<p class="information">Use classes in css to apply styles to sepecific classes.  To address a class, first type the selector then "." then the class name."  One class can apply to multiple selectors.  Use just ."classname" to make changes to all selectors that have the same classname.  Use this method to assign a block of text to be grouped together such as the sidebar or footer. ex: div a block to sidebar and use CSS to float the class to the right with a background color of yellow.</p>
+
+				<p class="information">Use flats to move blocks of code or graphics around the page.  Float is a common property. </br>
+					To make a column, div three sections of code in a "column" class.  Use CSS to apply a width and float the class.</p>
+				<div class="column_example"><h3>Column One</h3></div>
+				<div class="column_example"><h3>Column Two</h3></div>
+				<div class="column_example"><h3>Column Three</h3></div>
+
+				<p class="information">Here is a picture that shows the different kinds of properties used to create nice looking webpages:</p>
+				<img class="padded" src="img/box-model.jpg" alt="The Box Model">
+
+
+				<h4>Dynamic CSS</h4>
+				<p class="information">Here is code on how to make your website dynamic:</p>
+				<pre>Responsive CSS: "@media(min-width:768px) and (max-width" 991px) {</br>  .myclass {</br>    display: inline;</br>  }</br>}</pre>
+
+
+			<h1>JQuery</h1>
+				<h4>Alert:</h4>
+				<pre>jQuery("h1").click(function() {</br>	alert("Correct.");</br>});</pre>
+				
+
+
+				<h4>JS function from the library:  "$(document).ready(function);" </h4>
+	</div>
+</body>
+</html>
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+		<link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+		<script src="js/jquery-1.11.0.js"></script>
+		<script src="js/scripts.js"></script>
+		<title>Cheat Sheet</title>
+	</head>
+	<body>
+		<div class = "container">
+				<h1>Leap Year Notes</h1>
+					<p>BDD is a method used to answer specific questions when programming.  It helps the developer design the interface before iumplementation.  It stands for behavior driven design and has three parts:</p>
+					<ul>
+						<li>Describe</li>
+						<li>Implement</li>
+						<li>Clean Up</li>
+					</ul>
+					<h5>The BDD Process</h5>
+					<ol>
+						<li>Choose one behavior to build.</li>
+						<li>Write a spec.</li>
+						<li>Make sure it fails</li>
+						<li>Implement the behavior as simply as possible.</li>
+						<li>Check that the spec passes.</li>
+						<li>Check that all specs pass</li>
+						<li>Refactor</li>
+					</ol>
+				</br>
+				</br>
+				</br>
+				<h1>Leap Year Test</h1>
+					<pre>describe(&#39;leapYear&#39;, function() {</br>  it(&#39;is false for a year that is not divisible by 4&#39;, function() {</br>    leapYear(1999).should.equal(false);</br>  });</br>});</pre>
+
+					<p class="information"><strong>Describe</strong> is an argument.  <Strong>It</strong> and <strong>leapYear</strong> are both javascript functions that check the string passed to it.  "Should Equal" is used for testing.  The leapYear function is made in the script.js file in the javascript folder.</p>
+
+					<pre>var leapYear = function(year) {</br>  return false;</br>};</pre>
+
+					<p class="information">This is the most basic test showing that the funciton will return False no matter what year it is given.</p>
+
+					<pre>var leapYear = function(year) {</br>	if (year % 4 === 0) {</br>		return true;</br>	}	else {</br>		return false;</br>	}</br>};</pre>
+
+					<p class="information">This is a javascript function written in the primary java script folder that returns true is the remainder of the number given to the fucntion is zero when divided by 4.  It ruturns true is the remainder is 0 and false if it is not.</p>
+
+					<pre>var leapYear = function(year) {
+			if ((year % 4 === 0) &amp;&amp; (year % 100 !== 0)) {</br>		return true;</br>	} else {</br>		return false;</br>	}</br>};</pre>
+
+				<p class="information">This is a more comlicated statement showing all possible true returns on the same line.</p>
+				<p class="information">Because this function is not easy to read at first glance, we can further extract the functionality into other functions.  The resulting code will have two extra functions, <strong>divisibleByFour</strong> and <strong>divisibleByOneHundred</strong>.  The original code will be changed to if divisiblebyfour and not divisible by 100, return true; else, return false for better form.</p>
+
+				<pre>var leapYear = function(year) {</br>	if (divisibleByFour && !divisibleByOneHundred) {</br>		return true;</br>	}	else	{</br>		return false;</br>	}</br>};</br></pre>
+
+			<h1>Leap Year Detector</h1>
+
+			<form id="leap-year">
+				<div class="form-group">
+					<label for="year">Enter a year and find out if it's a leap year:</label>
+					<input id="year" type="text">
+				</div>
+
+				<button type="submit" class="btn">Find out!</button>
+			</form>
+
+			<div id="result">
+				<p><span class="year"></span> is <span class="not"></span> a leap year.</p>
+			</div>
+		</div>
+	</body>
+</html>	
+
